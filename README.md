@@ -24,3 +24,8 @@ Desarrollar un programa CLI (Interfaz de Línea de Comandos) en Python.
 - Git y GitHub para control de versiones
 - Trello o Jira para la gestión del proyecto
 - Bibliotecas adicionales según el nivel de implementación (por ejemplo, logging, unittest, tkinter para GUI, SQLite para base de datos)
+
+## Enlaces del proyecto
+
+- [Enlace al tablero de Trello](https://trello.com/b/5qc9eWeN/proyecto-de-taximetro)
+- [Enlace al repositorio de GitHub del proyecto](https://github.com/username/project)
