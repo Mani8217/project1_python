@@ -2,6 +2,9 @@
 
 ## 📝 Descripción del Proyecto
 
+<img src="https://i.postimg.cc/3w9k0p96/d1608b7a-6486-4d2b-ad62-04a37c5565c4.jpg" width="20%" style="float:left">
+
+
 Este proyecto consiste en desarrollar un prototipo de taxímetro digital utilizando Python. El objetivo es modernizar el sistema de facturación de los taxis y crear un sistema que calcule las tarifas a cobrar a los clientes de manera precisa y eficiente.
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbCCJcpCvjjhTdBLmri9SGKN-AMcA2ir6mIjPSv-iUVV9RjKrJcOf4KVYD0-tT25rp24&usqp=CAU" alt="Termometr digital"  width="30%"/>
