@@ -91,3 +91,8 @@ while True:
         break
     else:
         print("⛔ undefined order , please try again")
+
+
+# ctrl + cmd + space == emoji
+# cmd + shift + p == preferences settings
+# option + shift + ⬆️ == to select several lines
