@@ -1,32 +1,39 @@
 import time 
 
 class Taximeter:
+    
+
 
     def __init__(self , total_cost = 0 , trip_active = False , last_time = None):
         self.total_cost = total_cost
         self.trip_active = trip_active
         self.last_time = last_time
 
+    
+
+
     def start_trip(self):
         # start a trip
         if self.trip_active:
-            time.sleep(2)
-            print("new trip is started , please reset the Taximeter")
+          time.sleep(2)
+          print("New trip is started, please reset the Taximeter")
+          print("Total cost = 0.0")
+          return
 
-            return  
-        print("""
+    # Mostrar la imagen del taxi
+        print( """
                  .--------.
                 / .------. \\
                | /        \\ |
                | |  TAXI  | |
            ____| |________| |____
           '-----(o)------(o)-----'
-           """)    
-        self.total_cost = 0 
-        self.trip_active = True 
-        self.last_time = time.time() 
-        print("trip starts")
-           
+            """) 
+
+        self.total_cost = 0
+        self.trip_active = True
+        self.last_time = time.time()
+        print("Trip starts")
 
     def update_cost(self, moving=True):
         # update the fare according to time
@@ -50,11 +57,19 @@ class Taximeter:
         self.update_cost(moving = False) # last calculation befor stop
         self.trip_active = False
         print(f"🚕 trip is ended and the fare is: {self.total_cost:.2f} Euro ")
-
+    
+    def print_welcome(self):
+          print("""
+        .------------------------.
+        |    Welcome to Taxi!    |
+        |   🚖  Let's start!     |
+        '------------------------'
+          """)
 
 
 
 taxi = Taximeter()
+taxi.print_welcome()
 
 while True:
     command = input("\n Your order (start, move, stop, exit): ").strip().lower()
@@ -67,7 +82,12 @@ while True:
     elif command == "stop":
         taxi.stop_trip()
     elif command == "exit":
-        print("Goodbye!")
+        print("""
+         .--------------------.
+         |  Goodbye!          |
+         |    👋               |
+         '--------------------'
+         """)
         break
     else:
         print("⛔ undefined order , please try again")
