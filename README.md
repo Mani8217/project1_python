@@ -15,9 +15,11 @@ Cobra **€0.02 por segundo** cuando el taxi está parado y **€0.05 por segund
 Asegúrate de tener Python instalado. Luego, clona el repositorio y ejecuta el programa:
 
 
+```
 git clone https://github.com/manishidfar/taximeter.git
 cd taximeter
 python taximeter.py
+```
 
 
 
@@ -33,6 +35,22 @@ Una vez ejecutado el programa, puedes controlar el taxímetro con estos comandos
 - `stop` → Finalizar el trayecto y mostrar la tarifa total.
 - `exit` → Cerrar el programa.
 
+    ```
+    if command == "start":
+        taxi.start_trip()
+    elif command == "move":
+        taxi.update_cost(moving=True)
+        print(f"💨 current cost: {taxi.total_cost:.2f} Euro ")
+    elif command == "stop":
+        taxi.stop_trip()
+    elif command == "exit":
+        print("Goodbye!")
+        break
+    else:
+        print("⛔ undefined order , please try again")
+ 
+  ```
+
 ## ✨ Características  
 - 🕒 Calcula la tarifa en tiempo real.  
 - 🚦 Diferentes tarifas según el estado (parado o en movimiento).  
@@ -41,11 +59,7 @@ Una vez ejecutado el programa, puedes controlar el taxímetro con estos comandos
 
 
 
-## 👩‍💻 Autor  
-Desarrollado por [Mani Shidfar](https://github.com/Mani8217).
-
-
-
+## Abstraction 
 
 Este proyecto consiste en desarrollar un prototipo de taxímetro digital utilizando Python. El objetivo es modernizar el sistema de facturación de los taxis y crear un sistema que calcule las tarifas a cobrar a los clientes de manera precisa y eficiente.
 
@@ -72,7 +86,9 @@ Desarrollar un programa CLI (Interfaz de Línea de Comandos) en Python.
 - Trello o Jira para la gestión del proyecto
 - Bibliotecas adicionales según el nivel de implementación (por ejemplo, logging, unittest, tkinter para GUI, SQLite para base de datos)
 
-## Enlaces del proyecto
+## 🔗 Enlaces del proyecto
 
 - [Enlace al tablero de Trello](https://trello.com/b/5qc9eWeN/proyecto-de-taximetro)
 - [Enlace al repositorio de GitHub del proyecto](https://github.com/Mani8217/project1_python.git)
+## 👩‍💻👨🏻‍💻 Autor  
+Desarrollado por [Mani Shidfar](https://github.com/Mani8217).
