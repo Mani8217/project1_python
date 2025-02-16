@@ -8,8 +8,6 @@ Cobra **€0.02 por segundo** cuando el taxi está parado y **€0.05 por segund
 
 
 
-<img src="https://i.postimg.cc/3w9k0p96/d1608b7a-6486-4d2b-ad62-04a37c5565c4.jpg" width="20%" style="float:left">
-
 
 ## 🛠 Instalación  
 Asegúrate de tener Python instalado. Luego, clona el repositorio y ejecuta el programa:
@@ -58,6 +56,22 @@ Una vez ejecutado el programa, puedes controlar el taxímetro con estos comandos
 - 🔁 Permite múltiples trayectos sin reiniciar el programa.
 
 
+## Roadmap
+  <img src="https://i.postimg.cc/3w9k0p96/d1608b7a-6486-4d2b-ad62-04a37c5565c4.jpg" width="20%" height="20%" 
+  align="right">
+1. **Iniciar Viaje**: Reinicia el contador y marca el viaje como activo.
+2. **Actualizar Costo**: Actualiza la tarifa según el tiempo transcurrido y si el taxi está en movimiento o detenido.
+3.  **Detener Viaje**: Finaliza el viaje y muestra la tarifa total.
+
+
+
+
+## Uso
+
+1. `start`: Inicia un nuevo viaje.
+2. `move`: Actualiza la tarifa si el taxi está en movimiento.
+3. `stop`: Finaliza el viaje y muestra la tarifa.
+4. `exit`: Sale del programa.
 
 ## Abstraction 
 
